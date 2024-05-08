@@ -75,7 +75,17 @@
    color:var(--light-color);
    padding:.5rem 0;
 }
-
+.box-containerr {
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border-radius: 2rem;
+ }
+ .box-containerr p{
+     text-align: center;
+    color:var(--black);
+    padding:5rem 0;
+    font-size: 2rem;
+  }
 .home-category{
    padding-bottom: 0;
 }
@@ -926,7 +936,7 @@
    .about .row .box img{
       width: 100%;
       height: auto;
-   }   
+   }
 
    .shopping-cart .box-container{
       grid-template-columns: 1fr;

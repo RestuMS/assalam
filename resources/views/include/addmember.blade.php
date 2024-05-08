@@ -1,163 +1,61 @@
 <!DOCTYPE html>
-<!---Coding By CodingLab | www.codinglabweb.com--->
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Registration Form in HTML CSS</title>
-  <!---Custom CSS File--->
-  <link rel="stylesheet" href="css/styleadd.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undian</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
-  <section class="container">
-    <img src="images/logoteks.png" alt="">
-    <header>Pendaftaran Kartu<br>
-      Member Assalam Hypermarket
-    </header>
-    <form action="#" class="form">
-      <div class="input-box">
-        <label>Nama Member</label>
-        <input type="text" placeholder="Nama Member" required />
-      </div>
+    <section class="about">
 
-      <div class="input-box">
-        <label>Kewarganegaraan</label>
-        <div class="column">
-          <div class="select-box">
-            <select>
-              <option hidden>Kewarganegaraan</option>
-              <option>WNI</option>
-              <option>WNA</option>
-            </select>
-          </div>
-        </div>
-      </div>
+        <div class="row">
+            <div class="box-containerr">
+                <div class="box">
+                    <img src="{{ asset('images/kartumember.png') }}" alt="">
+                    <h3>APA ITU KARTU MEMBER PAS?</h3>
+                    <p>Kartu Member PAS atau Kartu Member Pelanggan Assalaam Hypermarket, adalah kartu member khusus
+                        untuk
+                        pelanggan
+                        Assalaam Hypermarket yang bisa digunakan untuk berbelanja dengan beberapa benefit yang bisa
+                        didapatkan.</p>
+                    <h3>KEUNTUNGAN BAGI CUSTOMER DENGAN KARTU MEMBER PAS</h3>
+                    <p>Customer apabila berbelanja menggunakan Kartu PAS akan mendapatkan keuntungan atau benefit
+                        seperti :
+                        <br>
+                        1. Reward Point :<br>
+                        Setiap customer yang berbelanja menggunakan Kartu PAS minimal Rp. 10.000,- akan mendapatkan 1
+                        point,
+                        dan berlaku kelipatan.<br>
+                        Setiap point yang sudah terkumpul dapat ditukarkan dengan hadiah menarik seperti voucher belanja
+                        dan
+                        berbagai hadiah lainnya.<br>
+                        2. Undian Berhadiah :<br>
+                        Setiap customer yang berbelanja minimal Rp. 100.000 akan mendapatkan 1 nomor undian yang akan
+                        diundi
+                        selama periode yang sudah ditentukan, berlaku kelipatan.<br>
+                    </p>
+                    <a href="{{ route('regismember') }}" class="btn">DAFTAR</a>
+                </div>
 
-      <div class="column">
-        <div class="input-box">
-          <label>Tempat</label>
-          <input type="text" placeholder="Tempat lahir" required />
-        </div>
-        <div class="input-box">
-          <label>Tanggal Lahir</label>
-          <input type="date" placeholder="tanggal lahir" required />
-        </div>
-      </div>
-      <div class="gender-box">
-        <h3>Jenis Kelamin</h3>
-        <div class="gender-option">
-          <div class="gender">
-            <div class="column">
-              <div class="select-box">
-                <select>
-                  <option hidden>Jenis Kelamin</option>
-                  <option>Laki-laki</option>
-                  <option>Perempuan</option>
-                </select>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="gender-box">
-          <h3>Agama</h3>
-          <div class="gender-option">
-            <div class="gender">
-              <div class="column">
-                <div class="select-box">
-                  <select>
-                    <option hidden>Agama</option>
-                    <option>Islam</option>
-                    <option>Kristen</option>
-                    <option>Hindu</option>
-                    <option>Konghucu</option>
-                    <option>Budha</option>
-                    <option>Katolik</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="input-box">
-            <label>Alamat</label>
-            <input type="text" placeholder="alamat" required />
-          </div>
-          <div class="input-box address">
-            <div class="column">
-              <div class="input-box">
-                <label>Kota</label>
-                <input type="text" placeholder="kota" required />
-              </div>
-              <div class="input-box">
-                <label>Kecamatan</label>
-                <input type="text" placeholder="kecamatan" required />
-              </div>
-            </div>
-            <div class="input-box address">
-              <div class="column">
-                <div class="input-box">
-                  <label>Kelurahan</label>
-                  <input type="text" placeholder="kelurahan" required />
-                </div>
-                <div class="input-box">
-                  <label>RT/RW</label>
-                  <input type="number" placeholder="RT/RW" required />
-                </div>
-              </div>
-              <div class="input-box address">
-                <div class="column">
-                  <div class="input-box">
-                    <label>Post Code</label>
-                    <input type="text" placeholder="post code" required />
-                  </div>
-                  <div class="input-box">
-                    <label>HP</label>
-                    <input type="text" placeholder="nomor handphone" required />
-                  </div>
-                </div>
-                <div class="input-box address">
-                  <div class="column">
-                    <div class="input-box">
-                      <label>Status</label>
-                      <div class="select-box">
-                        <select>
-                          <option hidden>Status</option>
-                          <option>Single</option>
-                          <option>Menikah</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="input-box">
-                      <label>Telp.</label>
-                      <input type="text" placeholder="nomor telepon" required />
-                    </div>
-                  </div>
-                  <div class="column">
-                    <div class="input-box">
-                      <label>Jml. Tanggungan</label>
-                      <input type="number" placeholder="jumlah tanggungan" required />
-                    </div>
-                    <div class="input-box">
-                      <label>Pendptn. per Bulan</label>
-                      <input type="number" placeholder="pendapatan per bulan" required />
-                    </div>
-                  </div>
-                  <div class="column">
-                    <div class="input-box">
-                      <label>Pengusaha Kena Pajak</label>
-                      <input type="text" placeholder="pengusaha kena pajak" required />
-                    </div>
-                    <div class="input-box">
-                      <label>NPWP</label>
-                      <input type="text" placeholder="NPWP" required />
-                    </div>
-                  </div>
 
-                  <button>Submit</button>
-    </form>
-  </section>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>

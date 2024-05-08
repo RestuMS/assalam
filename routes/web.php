@@ -31,6 +31,9 @@ Route::get('/addmember', function () {
     return view('include.addmember');
 })->middleware(['auth', 'verified'])->name('addmember');
 
+Route::get('/regismember', function () {
+    return view('include.regismember');
+})->middleware(['auth', 'verified'])->name('regismember');
 Route::get('/test', function () {
     return view('layouts.layout');
 })->name('test');
