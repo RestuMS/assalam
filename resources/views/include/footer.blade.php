@@ -13,7 +13,7 @@
         <div class="box">
             <h3>extra links</h3>
             <a href="https://assalaammarket.com/shop/"> <i class="fas fa-angle-right"></i> Belanja</a>
-            <a href="wishlist.php"> <i class="fas fa-angle-right"></i> wishlist</a>
+            {{-- <a href="wishlist.php"> <i class="fas fa-angle-right"></i> wishlist</a> --}}
             <a href="login.php"> <i class="fas fa-angle-right"></i> login</a>
             <a href="register.php"> <i class="fas fa-angle-right"></i> register</a>
         </div>

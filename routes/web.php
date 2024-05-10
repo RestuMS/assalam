@@ -3,7 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
+Route::get('/test', function () {
     return view('dashboard');
 });
 
@@ -11,7 +11,7 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/home', function () {
+Route::get('/', function () {
     return view('dashboard.home');
 })->middleware(['auth', 'verified'])->name('home');
 
@@ -34,6 +34,11 @@ Route::get('/addmember', function () {
 Route::get('/regismember', function () {
     return view('include.regismember');
 })->middleware(['auth', 'verified'])->name('regismember');
+
+Route::get('/index', function () {
+    return view('include.admin.index');
+})->middleware(['auth', 'verified'])->name('index');
+
 Route::get('/test', function () {
     return view('layouts.layout');
 })->name('test');

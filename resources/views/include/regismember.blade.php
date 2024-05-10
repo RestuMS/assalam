@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Registration Form in HTML CSS</title>
+    <title>Pendaftaran Kartu Member Assalam Hypermarket</title>
     <!---Custom CSS File--->
     <link rel="stylesheet" href="css/styleadd.css" />
 </head>
@@ -83,78 +83,78 @@
                         <label>Alamat</label>
                         <input type="text" placeholder="alamat" required />
                     </div>
-                    <div class="input-box address">
-                        <div class="column">
-                            <div class="input-box">
-                                <label>Kota</label>
-                                <input type="text" placeholder="kota" required />
-                            </div>
-                            <div class="input-box">
-                                <label>Kecamatan</label>
-                                <input type="text" placeholder="kecamatan" required />
+                    {{-- <div class="input-box address"> --}}
+                    <div class="column">
+                        <div class="input-box">
+                            <label>Kota</label>
+                            <input type="text" placeholder="kota" required />
+                        </div>
+                        <div class="input-box">
+                            <label>Kecamatan</label>
+                            <input type="text" placeholder="kecamatan" required />
+                        </div>
+                    </div>
+                    {{-- <div class="input-box address"> --}}
+                    <div class="column">
+                        <div class="input-box">
+                            <label>Kelurahan</label>
+                            <input type="text" placeholder="kelurahan" required />
+                        </div>
+                        <div class="input-box">
+                            <label>RT/RW</label>
+                            <input type="text" placeholder="RT/RW" required />
+                        </div>
+                    </div>
+                    {{-- <div class="input-box address"> --}}
+                    <div class="column">
+                        <div class="input-box">
+                            <label>Post Code</label>
+                            <input type="text" placeholder="post code" required />
+                        </div>
+                        <div class="input-box">
+                            <label>HP</label>
+                            <input type="text" placeholder="nomor handphone" required />
+                        </div>
+                    </div>
+                    {{-- <div class="input-box address"> --}}
+                    <div class="column">
+                        <div class="input-box">
+                            <label>Status</label>
+                            <div class="select-box">
+                                <select>
+                                    <option hidden>Status</option>
+                                    <option>Single</option>
+                                    <option>Menikah</option>
+                                </select>
                             </div>
                         </div>
-                        <div class="input-box address">
-                            <div class="column">
-                                <div class="input-box">
-                                    <label>Kelurahan</label>
-                                    <input type="text" placeholder="kelurahan" required />
-                                </div>
-                                <div class="input-box">
-                                    <label>RT/RW</label>
-                                    <input type="number" placeholder="RT/RW" required />
-                                </div>
-                            </div>
-                            <div class="input-box address">
-                                <div class="column">
-                                    <div class="input-box">
-                                        <label>Post Code</label>
-                                        <input type="text" placeholder="post code" required />
-                                    </div>
-                                    <div class="input-box">
-                                        <label>HP</label>
-                                        <input type="text" placeholder="nomor handphone" required />
-                                    </div>
-                                </div>
-                                <div class="input-box address">
-                                    <div class="column">
-                                        <div class="input-box">
-                                            <label>Status</label>
-                                            <div class="select-box">
-                                                <select>
-                                                    <option hidden>Status</option>
-                                                    <option>Single</option>
-                                                    <option>Menikah</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="input-box">
-                                            <label>Telp.</label>
-                                            <input type="text" placeholder="nomor telepon" required />
-                                        </div>
-                                    </div>
-                                    <div class="column">
-                                        <div class="input-box">
-                                            <label>Jml. Tanggungan</label>
-                                            <input type="number" placeholder="jumlah tanggungan" required />
-                                        </div>
-                                        <div class="input-box">
-                                            <label>Pendptn. per Bulan</label>
-                                            <input type="number" placeholder="pendapatan per bulan" required />
-                                        </div>
-                                    </div>
-                                    <div class="column">
-                                        <div class="input-box">
-                                            <label>Pengusaha Kena Pajak</label>
-                                            <input type="text" placeholder="pengusaha kena pajak" required />
-                                        </div>
-                                        <div class="input-box">
-                                            <label>NPWP</label>
-                                            <input type="text" placeholder="NPWP" required />
-                                        </div>
-                                    </div>
+                        <div class="input-box">
+                            <label>Telp.</label>
+                            <input type="text" placeholder="nomor telepon" required />
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="input-box">
+                            <label>Jml. Tanggungan</label>
+                            <input type="number" placeholder="jumlah tanggungan" required />
+                        </div>
+                        <div class="input-box">
+                            <label>Pendptn. per Bulan</label>
+                            <input type="number" placeholder="pendapatan per bulan" required />
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="input-box">
+                            <label>Pengusaha Kena Pajak</label>
+                            <input type="text" placeholder="pengusaha kena pajak" required />
+                        </div>
+                        <div class="input-box">
+                            <label>NPWP</label>
+                            <input type="text" placeholder="NPWP" required />
+                        </div>
+                    </div>
 
-                                    <button>Submit</button>
+                    <button>Submit</button>
         </form>
     </section>
 </body>
