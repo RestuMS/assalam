@@ -35,9 +35,17 @@ Route::get('/regismember', function () {
     return view('include.regismember');
 })->middleware(['auth', 'verified'])->name('regismember');
 
+Route::get('/userprofile', function () {
+    return view('include.userprofile');
+})->middleware(['auth', 'verified'])->name('userprofile');
+
 Route::get('/index', function () {
     return view('include.admin.index');
 })->middleware(['auth', 'verified'])->name('index');
+
+Route::get('/datamember', function () {
+    return view('include.admin.datamember');
+})->middleware(['auth', 'verified'])->name('datamember');
 
 Route::get('/test', function () {
     return view('layouts.layout');

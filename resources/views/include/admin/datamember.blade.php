@@ -90,28 +90,27 @@
                             </span>
                         </a>
                     <li>
-                        {{-- <a href="{{ route('aktivasi') }}" class="nav-link px-3"> --}}
-                        <span class="me-2"><i class="bi bi-book-fill"></i></span>
-                        <span>Aktivasi Member</span>
-                        </a>
+                        {{-- <a href="{{ route('aktivasi') }}" class="nav-link px-3">
+                            <span class="me-2"><i class="bi bi-book-fill"></i></span>
+                            <span>Aktivasi Member</span>
+                        </a> --}}
                     </li>
-
                     <div class="collapse" id="layouts">
                         <ul class="navbar-nav ps-3">
                             <li>
-                                <a href="{{ route('index') }}" class="nav-link px-3">
+                                {{-- <a href="{{ route('saldopoin') }}" class="nav-link px-3">
                                     <span class="me-2"><i class="bi bi-speedometer2"></i></span>
                                     <span>Dashboard</span>
-                                </a>
+                                </a> --}}
                             </li>
                         </ul>
                     </div>
                     </li>
                     <li>
-                        {{-- <a href="{{ route('saldopoin') }}" class="nav-link px-3"> --}}
-                        <span class="me-2"><i class="bi bi-book-fill"></i></span>
-                        <span>Input Saldo Poin</span>
-                        </a>
+                        {{-- <a href="{{ route('saldopoin') }}" class="nav-link px-3">
+                            <span class="me-2"><i class="bi bi-book-fill"></i></span>
+                            <span>Input Saldo Poin</span>
+                        </a> --}}
                     </li>
                 </ul>
             </nav>
@@ -122,30 +121,49 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <h4>Dashboard</h4>
+                    <h4>Data Member PAS Assalam</h4>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 mb-3">
-                    <div class="card bg-danger text-dark h-100">
-
-                        <div class="card-body py-5">Total Member</div>
-                        <div class="card-footer d-flex">
-                            <a href="{{ route('datamember') }}">View Details</a>
-                            <span class="ms-auto">
-                                <i class="bi bi-chevron-right"></i>
-                            </span>
+                <div class="col-md-12 mb-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <span><i class="bi bi-table me-2"></i></span> Data Member
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <div class="card bg-warning text-dark h-100">
-                        <div class="card-body py-5">Member Baru</div>
-                        <div class="card-footer d-flex">
-                            <a href="{{ route('datamember') }}">View Details</a>
-                            <span class="ms-auto">
-                                <i class="bi bi-chevron-right"></i>
-                            </span>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table id="example" class="table table-striped data-table" style="width: 100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Nama Member</th>
+                                            <th>Kewarganegaraan</th>
+                                            <th>Ttl</th>
+                                            <th>Jenis Kelamin</th>
+                                            <th>Agama</th>
+                                            <th>Alamat</th>
+                                            <th>Kota</th>
+                                            <th>Kecamatan</th>
+                                            <th>Kelurahan</th>
+                                            <th>RT/RW</th>
+                                            <th>Kode Pos</th>
+                                            <th>Hp</th>
+                                            <th>Status</th>
+                                            <th>Telp</th>
+                                            <th>Jml Tanggungan</th>
+                                            <th>Pendapatan PerBulan</th>
+                                            <th>Pengusaha Kena Pajak</th>
+                                            <th>NPWP</th>
+                                            <th>ACTION</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                            <td>
+                                {{-- <a href="#" class="btn btn-xs btn-warning"><i class="fa fa-edit"></i>Input</a>
+                                <a href="#" class="btn btn-xs btn-success"><i
+                                        class="fa fa-edit"></i>Aktivasi</a>
+                                <a href="#" class="btn btn-xs btn-danger"><i class="fa fa-trash"></i>Delete</a> --}}
+                            </td>
                         </div>
                     </div>
                 </div>

@@ -79,12 +79,24 @@
     background-color: var(--white);
     box-shadow: var(--box-shadow);
     border-radius: 2rem;
+    width: 100;
+
  }
  .box-containerr p{
-     text-align: center;
-    color:var(--black);
+    text-align: justify;
+    margin: 2rem;
     padding:5rem 0;
     font-size: 2rem;
+  }
+  .box-containerr strong{
+    text-align: justify;
+    margin: 2rem;
+    color: #00a79d;
+  }
+
+  .box-containerr ul li{
+    text-align: justify;
+    font-size: 1.5rem;
   }
 .home-category{
    padding-bottom: 0;
