@@ -81,36 +81,21 @@
                     <li>
                         <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse"
                             href="{{ route('datamember') }}">
-                            <span class="me-2"><i class="bi bi-layout-split"></i></span>
-                            <span>Total Member</span>
-                            <span class="ms-auto">
-                                <span class="right-icon">
-                                    <i class="bi bi-chevron-down"></i>
-                                </span>
-                            </span>
+                            <span class="me-2"><i class="bi bi-file-earmark-person-fill"></i></span>
+                            <span>Data Member</span>
                         </a>
+                    </li>
                     <li>
-                        {{-- <a href="{{ route('aktivasi') }}" class="nav-link px-3">
-                            <span class="me-2"><i class="bi bi-book-fill"></i></span>
+                        <a href="{{ route('aktivasi') }}" class="nav-link px-3">
+                            <span class="me-2"><i class="bi bi-cloud-check-fill"></i></span>
                             <span>Aktivasi Member</span>
-                        </a> --}}
-                    </li>
-                    <div class="collapse" id="layouts">
-                        <ul class="navbar-nav ps-3">
-                            <li>
-                                {{-- <a href="{{ route('saldopoin') }}" class="nav-link px-3">
-                                    <span class="me-2"><i class="bi bi-speedometer2"></i></span>
-                                    <span>Dashboard</span>
-                                </a> --}}
-                            </li>
-                        </ul>
-                    </div>
+                        </a>
                     </li>
                     <li>
-                        {{-- <a href="{{ route('saldopoin') }}" class="nav-link px-3">
-                            <span class="me-2"><i class="bi bi-book-fill"></i></span>
+                        <a href="{{ route('inputsaldo') }}" class="nav-link px-3">
+                            <span class="me-2"><i class="bi bi-stack"></i></span>
                             <span>Input Saldo Poin</span>
-                        </a> --}}
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -118,56 +103,70 @@
     </div>
     <!-- offcanvas -->
     <main class="mt-5 pt-3">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <h4>Data Member PAS Assalam</h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 mb-3">
-                    <div class="card">
-                        <div class="card-header">
-                            <span><i class="bi bi-table me-2"></i></span> Data Member
-                        </div>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table id="example" class="table table-striped data-table" style="width: 100%">
-                                    <thead>
-                                        <tr>
-                                            <th>Nama Member</th>
-                                            <th>Kewarganegaraan</th>
-                                            <th>Ttl</th>
-                                            <th>Jenis Kelamin</th>
-                                            <th>Agama</th>
-                                            <th>Alamat</th>
-                                            <th>Kota</th>
-                                            <th>Kecamatan</th>
-                                            <th>Kelurahan</th>
-                                            <th>RT/RW</th>
-                                            <th>Kode Pos</th>
-                                            <th>Hp</th>
-                                            <th>Status</th>
-                                            <th>Telp</th>
-                                            <th>Jml Tanggungan</th>
-                                            <th>Pendapatan PerBulan</th>
-                                            <th>Pengusaha Kena Pajak</th>
-                                            <th>NPWP</th>
-                                            <th>ACTION</th>
-                                        </tr>
-                                    </thead>
-                                </table>
-                            </div>
-                            <td>
-                                {{-- <a href="#" class="btn btn-xs btn-warning"><i class="fa fa-edit"></i>Input</a>
-                                <a href="#" class="btn btn-xs btn-success"><i
-                                        class="fa fa-edit"></i>Aktivasi</a>
-                                <a href="#" class="btn btn-xs btn-danger"><i class="fa fa-trash"></i>Delete</a> --}}
-                            </td>
+        <div class="row">
+            <div class="col-md-12 mb-3">
+                <div class="card">
+                    <div class="card-header">
+                        <span><i class="bi bi-table me-2"></i></span> Data Member
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table id="example" class="table table-striped data-table" style="width: 100%">
+                                <thead>
+                                    <tr>
+                                        <th>No Member</th>
+                                        <th>Nama Member</th>
+                                        <th>Kewarganegaraan</th>
+                                        <th>Ttl</th>
+                                        <th>Jenis Kelamin</th>
+                                        <th>Agama</th>
+                                        <th>Alamat</th>
+                                        <th>Kota</th>
+                                        <th>Kecamatan</th>
+                                        <th>Kelurahan</th>
+                                        <th>RT/RW</th>
+                                        <th>Kode Pos</th>
+                                        <th>Hp</th>
+                                        <th>Status</th>
+                                        <th>Telp</th>
+                                        <th>Jml Tanggungan</th>
+                                        <th>Pendapatan PerBulan</th>
+                                        <th>Pengusaha Kena Pajak</th>
+                                        <th>NPWP</th>
+                                        <th>Aktif/Non</th>
+                                        <th>action</th>
+                                    </tr>
+                                </thead>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <a href="" class="btn btn-xs btn-danger"><i class="fa fa-trash"></i>
+                                        Delete</a>
+                                </td>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </main>
     <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>

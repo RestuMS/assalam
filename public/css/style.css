@@ -93,10 +93,16 @@
     margin: 2rem;
     color: #00a79d;
   }
+  .box-containerr span{
+    align-items: flex-start;
+    margin: 2rem;
+    color: #00a79d;
+  }
 
   .box-containerr ul li{
     text-align: justify;
     font-size: 1.5rem;
+
   }
 .home-category{
    padding-bottom: 0;

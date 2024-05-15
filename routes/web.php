@@ -47,6 +47,22 @@ Route::get('/datamember', function () {
     return view('include.admin.datamember');
 })->middleware(['auth', 'verified'])->name('datamember');
 
+Route::get('/inputsaldo', function () {
+    return view('include.admin.inputsaldo');
+})->middleware(['auth', 'verified'])->name('inputsaldo');
+
+Route::get('/inputsaldo', function () {
+    return view('include.admin.inputsaldo');
+})->middleware(['auth', 'verified'])->name('inputsaldo');
+
+Route::get('/inputnomer', function () {
+    return view('include.admin.inputnomer');
+})->middleware(['auth', 'verified'])->name('inputnomer');
+
+Route::get('/aktivasi', function () {
+    return view('include.admin.aktivasi');
+})->middleware(['auth', 'verified'])->name('aktivasi');
+
 Route::get('/test', function () {
     return view('layouts.layout');
 })->name('test');

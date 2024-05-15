@@ -83,6 +83,7 @@
                             href="{{ route('datamember') }}">
                             <span class="me-2"><i class="bi bi-file-earmark-person-fill"></i></span>
                             <span>Data Member</span>
+
                         </a>
                     </li>
                     <li>
@@ -91,9 +92,8 @@
                             <span>Aktivasi Member</span>
                         </a>
                     </li>
-
                     <li>
-                        <a href="{{ route('inputsaldo') }}" class="nav-link px-3">
+                        <a href="{{ route('saldopoin') }}" class="nav-link px-3">
                             <span class="me-2"><i class="bi bi-stack"></i></span>
                             <span>Input Saldo Poin</span>
                         </a>
@@ -106,72 +106,37 @@
     <main class="mt-5 pt-3">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-4 mb-5">
-                    <div class="card bg-primary text-black h-200">
-                        <div class="fs-3 card-body py-5">Data Member</div>
-                        <div class="fs-5 card-footer d-flex">
-                            <a href="{{ route('datamember') }}" class="link-dark">View</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-5">
-                    <div class="card bg-warning text-dark h-100">
-                        <div class="fs-3 card-body py-5">Saldo Poin </div>
-                        <div class=" fs-5 card-footer ">
-                            <a href="{{ route('inputsaldo') }}" class="link-dark">View</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-5">
-                    <div class="card bg-success text-dark h-100">
-                        <div class="fs-3 card-body py-5">Aktivasi Member </div>
-                        <div class=" fs-5 card-footer ">
-                            <a href="{{ route('aktivasi') }}" class="link-dark">View</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <h4>Data Member</h4>
-                </div>
-            </div>
-            <div class="row">
                 <div class="col-md-12 mb-3">
                     <div class="card">
                         <div class="card-header">
-                            <span><i class="bi bi-table me-2"></i></span> Data Member
+                            <span><i class="bi bi-table me-2"></i></span> Saldo Poin
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table id="example" class="table table-striped data-table" style="width: 100%">
                                     <thead>
                                         <tr>
-                                            <th>No Member</th>
-                                            <th>Nama Member</th>
-                                            <th>Kewarganegaraan</th>
-                                            <th>Ttl</th>
-                                            <th>Jenis Kelamin</th>
-                                            <th>Agama</th>
-                                            <th>Alamat</th>
-                                            <th>Kota</th>
-                                            <th>Kecamatan</th>
-                                            <th>Kelurahan</th>
-                                            <th>RT/RW</th>
-                                            <th>Kode Pos</th>
-                                            <th>Hp</th>
-                                            <th>Status</th>
-                                            <th>Telp</th>
-                                            <th>Jml Tanggungan</th>
-                                            <th>Pendapatan PerBulan</th>
-                                            <th>Pengusaha Kena Pajak</th>
-                                            <th>NPWP</th>
-                                            <th>Aktif/Non</th>
+                                            <th>NO MEMBER</th>
+                                            <th>NAMA MEMBER</th>
+                                            <th>ALAMAT</th>
+                                            <th>KOTA</th>
+                                            <th>No Telepon</th>
+                                            <th>SALDO</th>
+                                            <th>ACTION</th>
                                         </tr>
                                     </thead>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <a href="{{ route('inputsaldo') }}" class="btn btn-xs btn-warning"><i
+                                                class="fa fa-input"></i> input</a>
+                                        <a href="" class="btn btn-xs btn-danger"><i class="fa fa-trash"></i>
+                                            Delete</a>
+                                    </td>
                                 </table>
                             </div>
                         </div>
